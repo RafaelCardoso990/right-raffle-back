@@ -14,6 +14,6 @@ app.use(json())
 app.use(router)
 app.use(errorHandlerMiddleware)
 
-app.listen(process.env.PORT, () =>{
+app.listen(process.env.PORT || 4000, () =>{
     console.log("Server listening on port " + process.env.PORT)
 })
