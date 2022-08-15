@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "outDir": "dist"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": ""
+  },
+  "ts-node": {
+    "esm": true
+  }
+}
