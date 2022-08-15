@@ -2,8 +2,7 @@ import { Request, Response } from "express"
 
 import authService from "../services/authService.js"
 
-async function signUp(req: Request, res: Response){    
-    console.log("entrei")
+async function signUp(req: Request, res: Response){        
     const user = req.body    
     await authService.insertUser(user)
     res.sendStatus(200)
