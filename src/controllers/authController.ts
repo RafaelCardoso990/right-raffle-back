@@ -11,8 +11,9 @@ async function signUp(req: Request, res: Response){
 
 async function signIn(req: Request, res: Response) {    
     const user = req.body
-    const token = await authService.signIn(user)    
-    res.send({ token : token.token, userId: token.userId }).status(200)
+    const token = await authService.signIn(user)
+    const response = {token : token.token, userId: token.userId}    
+    res.send(response).status(200)
 }
 
 export default { 
