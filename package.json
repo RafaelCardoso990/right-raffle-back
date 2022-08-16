@@ -8,7 +8,11 @@
     "build": "tsc && prisma migrate deploy",
     "start": "node dist/src/index.js",
     "dev:test": "dotenv -e .env.test nodemon src/index.ts",
-    "dev": "nodemon src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "prisma-seed": "prisma db seed"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
   },
   "keywords": [],
   "author": "",

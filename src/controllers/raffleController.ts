@@ -18,7 +18,8 @@ async function getAllRaffles(req: Request, res: Response) {
     res.status(200).send(raffle)
 }
 
-async function getRafflesById(req: Request, res: Response) {      
+async function getRafflesById(req: Request, res: Response) {
+          
     const id = req.params
     const amount = req.query.amount
     if(amount){        

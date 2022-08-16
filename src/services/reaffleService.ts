@@ -14,6 +14,7 @@ async function insertNumbers(numbers: any, rafflesId: number) {
 }
 
 async function getNumbersAvailableByIdRaffleAndAmount(id: number, amount: string) {
+    console.log("cheguei no serice")
     const raffles = await reaffleRepository.getNumbersAvailableByIdRaffleAndAmount(id, amount)
     return raffles
 }

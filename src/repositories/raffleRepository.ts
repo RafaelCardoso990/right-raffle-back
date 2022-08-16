@@ -31,6 +31,7 @@ async function getNumbersAvailableByIdRaffleAndAmount(id: number, amount: string
             rafflesId: id
         } , take: parseInt(amount)
     })
+    console.log(raffles)
    return raffles
 }
 
