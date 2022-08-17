@@ -5,8 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && prisma migrate deploy",
+    "build": "tsc && prisma migrate deploy && prisma db seed",
     "start": "node dist/src/index.js",
+    "test": "dotenv -e .env.test prisma migrate dev && NODE_OPTIONS=--experimental-vm-modules",
     "dev:test": "dotenv -e .env.test nodemon src/index.ts",
     "dev": "nodemon src/index.ts",
     "prisma-seed": "prisma db seed"
