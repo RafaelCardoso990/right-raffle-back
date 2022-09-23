@@ -7,6 +7,7 @@ async function createUser(createUserData: CreateUserData) {
         name: createUserData.name,
         email: createUserData.email,
         password: createUserData.password
+        
     }
     
     return await prisma.users.create({
